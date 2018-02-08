@@ -7,9 +7,13 @@ import kotlinx.android.synthetic.main.activity_skill.*
 
 class SkillActivity : BaseActivity() {
 
+    var leauge=""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill)
+        leauge = intent.getStringExtra(EXTRA_LEAUGE)
+        println(leauge)
 
 
     }

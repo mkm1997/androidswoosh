@@ -3,12 +3,11 @@
 
     <string name="background_image">background_image</string>
     <string name="logo_name">logo_name</string>
-    <string name="desired_leauge">Desired_Leauge</string>
+
     <string name="mens">MENS</string>
 
     <string name="womens">WOMENS</string>
     <string name="co_ed">CO-ED</string>
-    <string name="next">NEXT</string>
     <string name="welcom_page">welcom_page</string>
     <string name="swooshlogo">swooshlogo</string>
     <string name="going_all_in">GOING ALL IN</string>
@@ -20,5 +19,6 @@
     <string name="beginer">BEGINER</string>
     <string name="baller">BALLER</string>
     <string name="button">Button</string>
-    <string name="next">NEXT</string>  <!-- here we can change the name -->
+    <string name="next">NEXT</string>
+    <string name="desired_leauge">Desired Leauge:</string>  <!-- here we can change the name -->
 </resources>

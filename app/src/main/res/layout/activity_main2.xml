@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <ToggleButton
-            android:id="@+id/toggleButton1"
+            android:id="@+id/mensLeaugeButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/toggale_button"
@@ -71,10 +71,11 @@
             android:textOn="@string/mens"
             android:textSize="16sp"
             tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="259dp" />
+            tools:layout_editor_absoluteY="259dp"
+            tools:onClick="mensClicked" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/womensButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -88,21 +89,24 @@
             android:textSize="16sp"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="259dp"
+            tools:onClick="womensClicked"
             tools:text="WOMENS" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/coedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/toggale_button"
             android:fontFamily="@font/montserrat"
+            android:keyboardNavigationCluster="false"
             android:text="@string/co_ed"
             android:textColor="@android:color/white"
             android:textOff="@string/co_ed"
             android:textOn="@string/co_ed"
             android:textSize="16sp"
             tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="259dp" />
+            tools:layout_editor_absoluteY="259dp"
+            tools:onClick="coedClicked" />
 
     </LinearLayout>
 

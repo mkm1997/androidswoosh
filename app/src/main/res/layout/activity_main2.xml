@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/desiredleaguebg" />
+        app:srcCompat="@drawable/desiredleaguebg"
+        android:contentDescription="@string/background_image" />
     <ImageView
         android:id="@+id/logoname"
         android:layout_width="100dp"
@@ -27,7 +28,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/swooshlogo" />
+        app:srcCompat="@drawable/swooshlogo"
+        android:contentDescription="@string/logo_name" />
 
 
     <TextView
@@ -38,7 +40,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="52dp"
         android:fontFamily="@font/montserrat"
-        android:text="Desired Leauge"
+        android:text="@string/desired_leauge"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,10 +65,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/toggale_button"
             android:fontFamily="@font/montserrat"
-            android:text="MENS"
+            android:text="@string/mens"
             android:textColor="@android:color/white"
-            android:textOff="MENS"
-            android:textOn="MENS"
+            android:textOff="@string/mens"
+            android:textOn="@string/mens"
             android:textSize="16sp"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="259dp" />
@@ -79,10 +81,10 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/toggale_button"
             android:fontFamily="@font/montserrat"
-            android:text="WOMENS"
+            android:text="@string/womens"
             android:textColor="@android:color/white"
-            android:textOff="WOMENS"
-            android:textOn="WOMENS"
+            android:textOff="@string/womens"
+            android:textOn="@string/womens"
             android:textSize="16sp"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="259dp"
@@ -94,10 +96,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/toggale_button"
             android:fontFamily="@font/montserrat"
-            android:text="CO-ED"
+            android:text="@string/co_ed"
             android:textColor="@android:color/white"
-            android:textOff="CO-ED"
-            android:textOn="CO-ED"
+            android:textOff="@string/co_ed"
+            android:textOn="@string/co_ed"
             android:textSize="16sp"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="259dp" />
@@ -112,7 +114,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@drawable/toggale_button"
-        android:text="NEXT"
+        android:text="@string/next"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"

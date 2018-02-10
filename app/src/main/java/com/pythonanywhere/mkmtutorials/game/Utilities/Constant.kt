@@ -5,5 +5,7 @@ package com.pythonanywhere.mkmtutorials.game.Utilities
  */
 
 
-const val EXTRA_LEAUGE = "leauge"
-const val EXTRA_SKILLS = "Skills"
+
+//const val EXTRA_LEAUGE = "leauge"
+//const val EXTRA_SKILLS = "Skills"
+const val EXTRA_PLAYER = "player"

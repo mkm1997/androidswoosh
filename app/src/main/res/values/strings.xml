@@ -4,12 +4,11 @@
     <string name="background_image">background_image</string>
     <string name="logo_name">logo_name</string>
 
-    <string name="mens">MENS</string>
 
     <string name="womens">WOMENS</string>
     <string name="co_ed">CO-ED</string>
     <string name="welcom_page">welcom_page</string>
-    <string name="swooshlogo">swooshlogo</string>
+
     <string name="going_all_in">GOING ALL IN</string>
     <string name="on_going_all_out">ON GOING ALL OUT</string>
     <string name="find_a_team_in_your_city_and_dominate_the_league">Find a team in your city,and dominate the league</string>
@@ -19,6 +18,15 @@
     <string name="beginer">BEGINER</string>
     <string name="baller">BALLER</string>
     <string name="button">Button</string>
+
+
     <string name="next">NEXT</string>
-    <string name="desired_leauge">Desired Leauge:</string>  <!-- here we can change the name -->
+
+
+    <string name="mens">MENS</string>
+    <string name="desired_leauge">Desired Leauge</string>
+    <string name="swooshlogo">Swooshlogo</string>
+    <string name="leaugeimage">LeaugeImage</string>
+    <string name="looking_for_a_co_ed_beginer_leauge_near_you">Looking for a co-ed beginer leauge near you....</string>
+    <string name="finishactivepage">FinishActivepage</string>  <!-- here we can change the name -->
 </resources>

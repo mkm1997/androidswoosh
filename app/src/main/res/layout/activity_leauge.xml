@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pythonanywhere.mkmtutorials.game.Main2Activity">
+    tools:context="com.pythonanywhere.mkmtutorials.game.Controller.LeaugeActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/desiredleaguebg"
-        android:contentDescription="@string/background_image" />
+        android:contentDescription="@string/leaugeimage" />
     <ImageView
         android:id="@+id/logoname"
         android:layout_width="100dp"
@@ -29,7 +29,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/swooshlogo"
-        android:contentDescription="@string/logo_name" />
+        android:contentDescription="@string/swooshlogo" />
+
+
 
 
     <TextView
@@ -60,19 +62,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <ToggleButton
-            android:id="@+id/mensLeaugeButton"
+            android:id="@+id/mensButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/toggale_button"
             android:fontFamily="@font/montserrat"
+            android:onClick="MensClicked"
             android:text="@string/mens"
             android:textColor="@android:color/white"
             android:textOff="@string/mens"
             android:textOn="@string/mens"
             android:textSize="16sp"
             tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="259dp"
-            tools:onClick="mensClicked" />
+            tools:layout_editor_absoluteY="259dp" />
 
         <ToggleButton
             android:id="@+id/womensButton"
@@ -82,6 +84,7 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/toggale_button"
             android:fontFamily="@font/montserrat"
+            android:onClick="WomensClicked"
             android:text="@string/womens"
             android:textColor="@android:color/white"
             android:textOff="@string/womens"
@@ -89,7 +92,7 @@
             android:textSize="16sp"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="259dp"
-            tools:onClick="womensClicked"
+            tools:onClick="WomensClicked"
             tools:text="WOMENS" />
 
         <ToggleButton
@@ -98,32 +101,33 @@
             android:layout_height="wrap_content"
             android:background="@drawable/toggale_button"
             android:fontFamily="@font/montserrat"
-            android:keyboardNavigationCluster="false"
+            android:onClick="CoEdClicked"
             android:text="@string/co_ed"
             android:textColor="@android:color/white"
             android:textOff="@string/co_ed"
             android:textOn="@string/co_ed"
             android:textSize="16sp"
             tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="259dp"
-            tools:onClick="coedClicked" />
+            tools:layout_editor_absoluteY="259dp" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/NextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:background="@drawable/toggale_button"
+        android:onClick="NextLeauge"
         android:text="@string/next"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:onClick="NextLeauge" />
 
 
 </android.support.constraint.ConstraintLayout>

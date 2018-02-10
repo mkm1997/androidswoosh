@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pythonanywhere.mkmtutorials.game.SkillActivity">
+    tools:context="com.pythonanywhere.mkmtutorials.game.Controller.SkillActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -50,7 +50,7 @@
 
     <LinearLayout
         android:id="@+id/ToggalButton"
-        android:layout_width="358dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
@@ -58,38 +58,41 @@
         android:layout_marginTop="76dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/BeginerButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/toggale_button"
+            android:checked="false"
             android:fontFamily="@font/montserrat"
+            android:onClick="BeginerSkills"
             android:text="@string/beginer"
             android:textColor="@android:color/white"
             android:textOff="@string/beginer"
             android:textOn="@string/beginer"
             android:textSize="18sp"
-            tools:background="@drawable/toggale_button"
             tools:layout_editor_absoluteX="263dp"
             tools:layout_editor_absoluteY="204dp"
             tools:layout_marginRight="16dp" />
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/BallerButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/toggale_button"
             android:fontFamily="@font/montserrat"
+            android:onClick="BallerSkills"
             android:text="@string/baller"
             android:textColor="@android:color/white"
             android:textOff="@string/baller"
+
             android:textOn="@string/baller"
             android:textSize="18sp"
-            tools:background="@drawable/toggale_button"
             tools:layout_editor_absoluteX="42dp"
             tools:layout_editor_absoluteY="204dp"
             tools:layout_marginLeft="16dp" />
@@ -99,12 +102,12 @@
         android:id="@+id/NextSkillButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:onClick="nextLeauge"
+        android:onClick="FinishNext"
         android:text="@string/next"
         android:textColor="@android:color/white"
         android:textSize="18sp"
@@ -113,3 +116,4 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
+

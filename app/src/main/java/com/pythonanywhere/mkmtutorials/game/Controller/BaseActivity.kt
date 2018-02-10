@@ -1,4 +1,4 @@
-package com.pythonanywhere.mkmtutorials.game
+package com.pythonanywhere.mkmtutorials.game.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
